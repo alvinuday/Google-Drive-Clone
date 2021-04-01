@@ -194,7 +194,7 @@
 }
 #sub2-section3 {
     position: relative;
-    left:130px;
+    left:90px;
     top:180px;
     /* background-color: red; */
 }
@@ -238,6 +238,16 @@
 #sub-box2-section4 {
     padding: top 10px;
     padding-bottom: 20px;
+}
+#sub2-section4 {
+    /* background-color: red; */
+    position: relative;
+    left: 130px;
+}
+#sub1-section4 {
+    position: relative;
+    left: 150px;
+    bottom: 200px;
 }
 /* <----------SECTION-5----------> */
 #hr1 {
