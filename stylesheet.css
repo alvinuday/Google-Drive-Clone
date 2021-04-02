@@ -9,6 +9,9 @@ html {
 /* <---------RESPONSE-------> */
 
 @media all and (min-width: 757px) and (max-width:1280px){
+    #ham-box {
+        display: none;
+    }
     .section2,.section3,.section4,.section5,.section6,.nav-bar {
     
         /* background-color:red; */
@@ -149,6 +152,58 @@ html {
         flex-wrap: wrap;
         flex-direction: column;
     }
+    #ham-box>a{
+        /* background-color: red; */
+        color:#5f6368 ;
+        text-decoration: none;
+        padding: 2rem;
+        font-size: 3.5rem;
+        height: inherit;
+        opacity: 0%;
+        padding-left: 10rem;
+        /* animation: linksfade 0.5s ease forwards 1s; */
+        
+        
+    }
+    #ham-box>a:hover {
+        color:#202124;
+        
+    }
+    #ham-box {
+        background-color: rgba(219, 219, 219, 0.315);
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        margin-right: 20rem;
+        margin-top: 0;
+        margin-left: 0;
+        height: 50rem;
+        width: 90rem;
+        transform: translateX(-100%);
+        transition: all 0.85s ease-in;
+}
+@keyframes linksfade{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes linksfadeback{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+
+}
 
 }
 @media all and (min-width:0px) and (max-width:757px) {
@@ -170,7 +225,8 @@ html {
     }
    #nav-button2-copy
    {
-       position: relative;
+       
+        position: relative;
        left: 10rem;
 
        top: 5rem;
@@ -185,6 +241,7 @@ html {
         font-size: 3.5rem;
         height: inherit;
         opacity: 0%;
+        padding-left: 10rem;
         /* animation: linksfade 0.5s ease forwards 1s; */
         
         
@@ -202,15 +259,10 @@ html {
         margin-top: 0;
         margin-left: 0;
         height: 50rem;
-        width: 90%;
+        width: 90rem;
         transform: translateX(-100%);
-        transition: all 0.75s ease-in;
-    
-        
-        
-        
-    
-    }
+        transition: all 0.85s ease-in;
+}
 @keyframes linksfade{
     from{
         opacity: 0;
@@ -399,6 +451,7 @@ label {
     font-weight: 100;
     transition: all 0.15s;
     display: none;
+    padding-left: 3rem;
 }
 
 /* #ham-box{
@@ -999,3 +1052,8 @@ body {
 .togglebox {
     display: none;
 }
+.hamlink {
+    position: relative;
+    right:2rem ;
+}
+

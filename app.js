@@ -5,6 +5,20 @@ var counter=2;
 function phaseout() {
     hambox[0].style.position = "absolute";
 }
+function checkit(){
+    if (screen.width>=757){
+        counter = 3;
+        clicked();
+    }
+}
+setInterval(() => { 
+    if (screen.width>=757){
+        counter = 3;
+        clicked();
+    }
+    
+}, 500);
+
 
 function clicked() {
     if (counter%2==0) {
@@ -14,7 +28,7 @@ function clicked() {
        links[0].style.animation = "linksfade 1s ease forwards 0.33s";
        links[1].style.animation = "linksfade 1s ease forwards 0.66s";
        links[2].style.animation = "linksfade 1s ease forwards 1s";
-       
+
        
        //Animation of individual links
 
