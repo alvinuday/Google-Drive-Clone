@@ -172,9 +172,13 @@ html {
         color:#5f6368 ;
         text-decoration: none;
         padding: 2rem;
-        font-size: 3rem;
+        font-size: 4rem;
+        height: inherit;
         
         
+    }
+    #ham-box>a:hover {
+        color:#202124
     }
     #ham-box {
         background-color: rgba(219, 219, 219, 0.315);
@@ -183,10 +187,13 @@ html {
         margin-right: 20rem;
         margin-top: 0;
         margin-left: 0;
+        height: 50rem;
+        
         
         
     
     }
+
     #pix1,#pix2,#pix3,#pix4 {
         height: 50vw;
     }
@@ -353,11 +360,12 @@ label {
     transition: all 0.15s;
     display: none;
 }
-#toggle {
-    display: none;
-}
+
 #ham-box{
     display:none;
+}
+#toggle {
+    display: none;
 }
 #gdrive-product-icon {
     height: 3.7rem;
@@ -685,7 +693,6 @@ label {
     flex-direction: column;
     position: relative;
     top:30rem;
-    justify-contents: center;
     margin: 0;
 
 }
