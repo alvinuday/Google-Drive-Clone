@@ -9,6 +9,11 @@ html {
 /* <---------RESPONSE-------> */
 
 @media all and (min-width: 757px) and (max-width:1280px){
+    .section2,.section3,.section4,.section5,.section6,.nav-bar {
+    
+        /* background-color:red; */
+        width: 100%;
+    }
     html{
         font-size:8px;
     }
@@ -147,6 +152,11 @@ html {
 
 }
 @media all and (min-width:0px) and (max-width:757px) {
+    .section2,.section3,.section4,.section5,.section6,.nav-bar {
+    
+        /* background-color:red; */
+        width: 100%;
+    }
     body {
         overflow-x: hidden;
     }
@@ -174,26 +184,55 @@ html {
         padding: 2rem;
         font-size: 3.5rem;
         height: inherit;
+        opacity: 0%;
+        /* animation: linksfade 0.5s ease forwards 1s; */
         
         
     }
     #ham-box>a:hover {
-        color:#202124
+        color:#202124;
+        
     }
     #ham-box {
         background-color: rgba(219, 219, 219, 0.315);
         display: flex;
+        position: absolute;
         flex-direction: column;
         margin-right: 20rem;
         margin-top: 0;
         margin-left: 0;
         height: 50rem;
-        width: 300rem;
+        width: 90%;
+        transform: translateX(-100%);
+        transition: all 0.75s ease-in;
+    
         
         
         
     
     }
+@keyframes linksfade{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes linksfadeback{
+    from{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+
+}
 
     #pix1,#pix2,#pix3,#pix4 {
         height: 50vw;
@@ -362,9 +401,10 @@ label {
     display: none;
 }
 
-#ham-box{
+/* #ham-box{
     display:none;
-}
+    
+} */
 #toggle {
     display: none;
 }
@@ -507,6 +547,18 @@ label {
     background-color: #185ABC;
 }
 /* <------------SECTION-1-------------> */
+/* #ham-box {
+    background-color: rgba(219, 219, 219, 0.315);
+    display: flex;
+    flex-direction: column;
+    margin-right: 20rem;
+    margin-top: 0;
+    margin-left: 0;
+    height: 50rem;
+    width: 90%;
+    transform: translateX(-100%);
+    position: absolute;
+} */
 .section1 {
     display: flex;
     flex-wrap: wrap;
@@ -939,8 +991,11 @@ label {
 body {
     overflow-x: hidden;
 }
-.section2,.section3,.section4,.section5,.section6 {
+.section2,.section3,.section4,.section5,.section6,.nav-bar {
     
     /* background-color:red; */
-    width: 95%;
+    width: 100%;
+}
+.togglebox {
+    display: none;
 }
