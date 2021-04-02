@@ -154,9 +154,9 @@ html {
    #nav-button2-copy
    {
        position: relative;
-       right: 43vw;
+       left: 10rem;
        z-index: 1;
-       top: 10rem;
+       top: 5rem;
        align-self: center;
        justify-self: center;
    }
