@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');* {
     font-family: poppins;
 }
+
 html {
     font-size: 10px;
     transition: all 0.4s;
@@ -208,7 +209,8 @@ html {
         /* left:5rem; */
         /* background-color: yellow; */
         height: 5vw;
-        width:100vw
+        width:100vw;
+        right: 5rem;
     }
     #sub-box1-section2 {
         word-spacing: 0.01rem;
@@ -227,6 +229,7 @@ html {
         flex-wrap: wrap;
         flex-direction: column-reverse;
         position: relative;
+        right: 5rem;
     }
     .section3{
         display: flex;
@@ -917,4 +920,13 @@ label {
     color: #5f6368;
     padding-left: 2rem;
     cursor: pointer;
+}
+
+body {
+    overflow-x: hidden;
+}
+.section2,.section3,.section4,.section5,.section6 {
+    
+    /* background-color:red; */
+    width: 95%;
 }
