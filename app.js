@@ -5,24 +5,24 @@ var counter=2;
 function phaseout() {
     hambox[0].style.position = "absolute";
 }
-function checkit(){
+/* function checkit(){
     if ((screen.width>=757)){
-        hambox[0].style.transform = "translateX(-100%)";
-        /* hambox[0].style.position = "absolute"; */
+        hambox[0].style.transform = "translateX(-100%)"
+       
         setTimeout(phaseout,750);
-        links[0].style.animation = "linksfadeback 1s ease-out forwards 0s";
-        links[1].style.animation = "linksfadeback 2s ease-out forwards 0s";
-        links[2].style.animation = "linksfadeback 4s ease-out forwards 0s";
-        counter = 6;
-        console.log("hello",counter);
-        /* hambox[0].style.display = "none"; */
+        links[0].style.animation = "linksfadeback 1s ease-out forwards 0s"
+        links[1].style.animation = "linksfadeback 2s ease-out forwards 0s"
+        links[2].style.animation = "linksfadeback 4s ease-out forwards 0s"
+        counter = 6
+        console.log("hello",counter)
+        
 
         
     }
     
     
-}
-setInterval(checkit,100);
+};
+setInterval(checkit,100); */
 
 
 function clicked() {
